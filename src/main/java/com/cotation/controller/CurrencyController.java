@@ -26,7 +26,7 @@ public class CurrencyController {
 
 		if(currency != null){
 			List<CurrencyDTO> result = Arrays.asList(
-					new CurrencyDTO(currency.getUsd().getName(), currency.getEur().getBid()),
+					new CurrencyDTO(currency.getUsd().getName(), currency.getUsd().getBid()),
 					new CurrencyDTO(currency.getEur().getName(), currency.getEur().getBid()),
 					new CurrencyDTO(currency.getBtc().getName(), currency.getBtc().getBid())
 			);
